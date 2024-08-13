@@ -1,9 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color-1: #0a3871;
+    --color-2: #ffffff;
+    --color-3: #fcf3f9;
+    --fuente-inter: 'Inter', sans serif;
+
+    }
+
+
 * {
-    background: #fcf3f9;
-    font-family: 'Inter';
+    background: var(--color-3);
+    font-family: var(--fuente-inter);
     font-size: 32px;
     font-weight: 400;
     line-height: 150%;
+    overflow-y: hidden;
 }
  
 .logo {
@@ -19,12 +31,67 @@ main  {
 
 .text-area {
     border: none;
-    color: #0a3871;
+    color: var(--color-1);
     margin-top: 90px;
-    text-transform: lowercase;
+    text-transform: lowercase;   
 }
 
-::placeholder { color: #0a3871; }
+::placeholder { color: var(--color-1); }
     .text-area:focus {
         outline: none;
-      }
+    }
+
+.mensaje {
+    background: var(--color-2);
+    background-image: url("/Img/Monito.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: var(--color-1);
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+.mensaje:focus{
+    outline: none;
+}
+.botones {
+    display: flex;
+    margin-top: 18px;
+    gap: ;
+}
+
+.btn-encriptar {
+    background-color: var(--color-1);
+    border: 1px solid var(--color-1);
+    border-radius: 24px;
+    color: var(--color-2);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    position: absolute;
+}
+.btn-desencriptar {
+    border: 1px solid var(--color-1);
+    border-radius: 24px;
+    color: var(--color-1);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 336px;
+       
+}
+.copiar {
+    border: 1px solid var(--color-1);
+    border-radius: 24px;
+    color: var(--color-1);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 336px;
+}
