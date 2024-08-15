@@ -36,7 +36,9 @@ main  {
     border: none;
     color: var(--color-1);
     margin-top: 30px;
-    text-transform: lowercase;   
+    padding: 2px;
+    text-transform: lowercase; 
+      
 }
 
 ::placeholder { color: var(--color-1); }
@@ -57,12 +59,14 @@ main  {
     margin-top: 20px;
     padding-left: 20px;
     position: fixed;
+    
 }
 .mensaje:focus{
     outline: none;
 }
 .botones {    
     margin-top: 18px;
+    display: flex;
     
 }
 
@@ -83,9 +87,8 @@ main  {
     color: var(--color-1);
     cursor: pointer;
     height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
-    width: 336px;
+    margin-left: 30px;
+    width: 328px;
        
 }
 .copiar {
@@ -94,13 +97,41 @@ main  {
     color: var(--color-1);
     cursor: pointer;
     height: 67px;
-    margin-left: 108px;
-    margin-top: 1300px;
-    position: relative;
+    margin-left: 120px;
+    position: absolute;
+    margin-top: 900px;
     width: 336px;
 }
 .informacion {
     color: var(--color-5);
     font-size: 18px;
     margin-top: 360px;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: var(--color-3);
+}
+.pie-pagina .redes-sociales{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+   
+    
+}
+.pie-pagina .redes-sociales a{
+    transition: all 300ms   ease;
+}
+.pie-pagina .redes-sociales a:hover{
+    color: var(--color-2);
+}
+.pie-pagina .autor{
+   background-color: var(--color-3);
+   padding: 15px 10px;
+   text-align:end;
+   color: var(--color-1);
+}
+@media screen and (max-width:800px){
+    width: 100%;
+
 }
