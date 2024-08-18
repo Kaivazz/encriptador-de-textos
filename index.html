@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/39d63d386b.js" crossorigin="anonymous"></script>
@@ -14,11 +12,11 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="/Img/Logo (2).png" alt="Logo de alura">
+        <img class="logo" src="./Img/Logo (2).png" alt="Logo de alura">
     </header> 
     <main>
         <section>
-        <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí" id=""></textarea>
+        <textarea class="text-area" cols="20" rows="10" placeholder="Ingrese el texto aquí"></textarea>
         <div>
             <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
         </div>
@@ -28,24 +26,25 @@
         </div>
         </section>
         <section>
-            <textarea class="mensaje" cols="20" rows="10"></textarea>
+            <textarea class="mensaje" cols=20 rows=10></textarea>
             <div>
-            <button class="copiar">Copiar</button>
+            <button class="btn-copiar" onclick="copiarMensaje()">Copiar</button>
             </div>
         </section>
     </main>
     <script src="./script.js"></script>
+    <footer class="pie-pagina">
+        <div class="redes-sociales">
+                <!-- "> -->
+                <a href="https://www.linkedin.com/in/kailopezvaz" class="fa fa-linkedin"></a>
+                <a href="https://github.com/Kaivazz" class="fa fa-github"></a>
+                       
+        </div>
+        
+        <div class="autor">
+            <small>&copy; 2024 <b>Kaivazz</b> - Todos los derechos reservados</small>
+        </div>
+    </footer>
 </body>
-<footer class="pie-pagina">
-    <div class="redes-sociales">
-            <!-- "https://www.linkedin.com/in/kailopezvaz> -->
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-github"></a>
-                   
-    </div>
-    
-    <div class="autor">
-        <small>&copy; 2024 <b>Kaivazz</b> - Todos los derechos reservados</small>
-    </div>
-</footer>
+
 </html>

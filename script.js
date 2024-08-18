@@ -32,7 +32,7 @@ function btnEncriptar() {
         const textoEncriptado = encriptar(textArea.value);
         mensaje.value = textoEncriptado;
         textArea.value = ""; // Limpiar el área una vez se de el evento onclick
-        mensaje.style.backgroundImage = "url('./img/monitofeliz.png')"; // Cambia imagen
+        mensaje.style.backgroundImage = "none"; // Quita imagen
     } else {
         Swal.fire("Debes ingresar un texto");
 }
@@ -44,7 +44,8 @@ function desencriptar(stringDesencriptada) {
 
     for (let i = 0; i < matrizCodigo.length; i++) {
         if (stringDesencriptada.includes(matrizCodigo[i][1])){
-            stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0])  
+            stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
+            
                        
     }        
 } 
@@ -56,8 +57,15 @@ function btnDesencriptar() {
         const textoDesencriptado = desencriptar(textArea.value);
         mensaje.value = textoDesencriptado;
         textArea.value = ""; // Limpiar el área una vez se de el evento onclick
-        mensaje.style.backgroundImage = "url('./img/monitofeliz.png')"; // Cambia imagen
+        mensaje.style.backgroundImage = "none"; // Quita imagen
     } else {
         Swal.fire("Debes ingresar un texto");
 }
+}
+
+function copiarMensaje(){
+    navigator.clipboard.writeText(mensaje.value);
+    Swal.fire("Texto copiado");
+    textArea.value = "";
+    
 }
