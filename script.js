@@ -66,6 +66,6 @@ function btnDesencriptar() {
 function copiarMensaje(){
     navigator.clipboard.writeText(mensaje.value);
     Swal.fire("Texto copiado");
-    textArea.value = "";
-    
+    textArea.value = "";    
 }
+
