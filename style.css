@@ -23,7 +23,6 @@
 body{
     background-color: var(--color-3);
     font-family: var(--fuente-inter);
-    display: flex;
     flex-direction: column;
     height: 100dvh;
 }
@@ -39,7 +38,6 @@ header{
 main  {
     background-color: var(--color-primario);
     flex: 1;
-    display: flex;
     justify-content: flex-end;
     gap: 5rem;
     padding: 2.5rem;
