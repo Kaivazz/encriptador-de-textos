@@ -68,4 +68,3 @@ function copiarMensaje(){
     Swal.fire("Texto copiado");
     textArea.value = "";    
 }
-
