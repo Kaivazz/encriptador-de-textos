@@ -68,3 +68,6 @@ function copiarMensaje(){
     Swal.fire("Texto copiado");
     textArea.value = "";    
 }
+// Easter Egg -Descubre en console un mensaje para descifrar
+let text= "Desencripta lo siguiente --> fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!";
+console.log(text)

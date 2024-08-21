@@ -219,3 +219,16 @@ margin-top: 120px;
    font-size: 100%;
 }
 
+
+@media (max-width: 768px) {
+
+    .mensaje {
+        display: none;
+           }
+    .body {
+        flex-direction: row;
+        height: auto;
+             
+          }
+}
+
