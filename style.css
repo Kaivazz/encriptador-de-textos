@@ -10,19 +10,19 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     font-family: 'Lexend Zetta', 'sans serif';
     font-weight: 400;
     line-height: 1.5;
-    
+
   }
 body {
     display: grid;
-    grid-template-columns: repeat(autofill, minmax(100vh, 1fr));
+    grid-template-columns: repeat(autofill, minmax(500px, 1fr));
     grid-auto-flow: dense;
     background-color: var(--color-3);
     max-height: 90vh;
-    
+
    }
 header  {
     padding: 0 5%;
@@ -52,7 +52,7 @@ main{
     border: none;
     color: var(--color-1);
     background-color: transparent ;
-    
+
   }
 ::placeholder {
   color: var(--color-1);
@@ -69,7 +69,7 @@ main{
   }
 .botones{
     display: flex;
-    flex-direction: row;     
+    flex-direction: row;
     }
 
 .btn-encriptar{
@@ -78,7 +78,7 @@ main{
   border-radius: 20px;
   color: var(--color-2);
   cursor: pointer;
-  width: 85%;   
+  width: 85%;
   font-size: 0.7 rem;
   transition: color 0.5s, background-color 0.9s;
 }
@@ -89,9 +89,9 @@ main{
   color: var(--color-1);
   cursor: pointer;
   width: 85%;
-  font-size: 1.0 rem;     
+  font-size: 1.0 rem;
   transition: color 0.9s, background-color 0.8s;
-  margin-left: 1rem; 
+  margin-left: 1rem;
 }
 .btn-desencriptar:hover {
   background-color: var(--color-1);
@@ -109,8 +109,9 @@ main{
   width: 100%;
   height: 100%;
   border-radius: 5%;
-  padding: 2%; 
-  
+  padding: 2%;
+  margin-top: -7.5%;
+
 }
 .mensaje{
   align-items: center;
@@ -129,7 +130,7 @@ main{
   font-size: 1.5 rem;
   border: none;
   text-transform: lowercase;
-} 
+}
 .mensaje:focus{
   outline: none;
 }
@@ -138,7 +139,7 @@ main{
   font-size: 85%;
   text-align:inherit;
   color: var(--color-1);
-  
+
 }
 
 .btn-copiar {
@@ -147,24 +148,24 @@ main{
   border-radius: 20px;
   color: var(--color-2);
   cursor: pointer;
-  position: absolute; 
+  position: absolute;
   margin-left: -10%;
   height: 4.5%;
-  width: 20%; 
+  width: 20%;
   justify-content: center;
- 
+
 
 }
 
 footer {
   display:grid;
   grid-template-rows: 1fr 1fr 1fr;
-  width: 100%;  
+  width: 100%;
   font-size: 0.8rem;
   margin-top: -5%;
   justify-content: center;
   color: var(--color-1);
- 
+
 }
 h2 {
     font-size: 1.0rem;
@@ -173,7 +174,7 @@ h2 {
 
 
 #linkedin-logo, #github-logo {
-  width: 1.5rem; 
+  width: 1.5rem;
   cursor: pointer;
   margin-left: 5rem;
 }
@@ -181,9 +182,9 @@ h2 {
 
 .img-github:hover, .img-linkedin:hover {
     transform: scale(1.1);
-    
-    
-} 
+
+
+}
  /* Ajustes para pantallas pequeñas */
 @media (max-width: 480px) {
     header{
@@ -198,7 +199,7 @@ h2 {
     }
     .ingresa {
       max-width: 90%;
-      
+
     }
     .ingresaTexto {
         height: 70%;
@@ -216,11 +217,11 @@ h2 {
     .textoRevelado {
       max-width: 100%;
       height: 90%;
-         
+
     }
     .mensaje {
       height: 55%;
-      background-image: none;      
+      background-image: none;
     }
     .alerta, .instrucciones {
         font-size: 0.5rem;
@@ -231,7 +232,7 @@ h2 {
       }
     footer {
         font-size: 50%;
-        
+
     }
     .redes-h2{
         font-size: 100%;
@@ -240,13 +241,14 @@ h2 {
     #linkedin-logo, #github-logo {
         width: 4%;
         margin-left: 30%;
+        transform: scale(1.1);
     }
     small {
         font-size: 10%;
         margin-left: 21%;
     }
  }
-  
+
   /* Ajustes para pantallas medianas */
   @media (min-width: 481px) and (max-width: 768px) {
     header{
@@ -280,9 +282,10 @@ h2 {
         font-size: 0.5 rem;
     }
   }
-  /* Ajustes para pantallas grandes */
-  @media (min-width: 769px) {
-    /* Ajustes para pantallas grandes */
+}
+  /*Ajustes para pantallas grandes*/
+  /* @media (min-width: 769px) {
+   
     body {
     grid-template-columns: repeat(1, 1fr);
     }
@@ -301,10 +304,11 @@ h2 {
     .textoRevelado {
     width: 70%;
     height: 98%;
+    margin-top: -10%;
     }
     .mensaje {
     height: 100%;
     border-radius: 10%;
     font-size: 0.4 rem;
     }
-  }
+  } */
