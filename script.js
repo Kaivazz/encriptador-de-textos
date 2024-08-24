@@ -1,6 +1,9 @@
 //valores definidos de la variable que no serán cambiados
-const textArea = document.querySelector(".text-area");
+const textArea = document.querySelector(".ingresaTexto");
 const mensaje = document.querySelector(".mensaje");
+const alerta = document.querySelector(".alerta");
+const instrucciones = document.querySelector(".instrucciones");
+
 
 //almacenar las llaves de encriptación dentro de una matriz:
 /*llaves" de encriptación a ocupar:
@@ -28,11 +31,14 @@ return stringEncriptada;
 
 //nos permite hacer función del evento sobre botón encriptar
 function btnEncriptar() {
-    if (textArea.value.trim() !== "") { // Verificar si la textarea está vacía
+    if (textArea.value.trim() !== "") { // Verificar si la textarea no está vacía
         const textoEncriptado = encriptar(textArea.value);
         mensaje.value = textoEncriptado;
         textArea.value = ""; // Limpiar el área una vez se de el evento onclick
-        mensaje.style.backgroundImage = "none"; // Quita imagen
+        mensaje.style.backgroundImage = "none"; // Quita imagen de fondo
+        alerta.style.display = "none"; // Ocultar alerta
+        instrucciones.style.display = "none"; // Ocultar instrucciones
+
     } else {
         Swal.fire("Debes ingresar un texto");
 }
@@ -51,13 +57,15 @@ function desencriptar(stringDesencriptada) {
 } 
 return stringDesencriptada;
 }
-//nos permite hacer función del evento sobre botón desencriptar
+// Permite hacer función del evento sobre botón desencriptar:
 function btnDesencriptar() {
-    if (textArea.value.trim() !== "") { // Verificar si la textarea está vacía
+    if (textArea.value.trim() !== "") { // Verificar si la textarea no está vacía
         const textoDesencriptado = desencriptar(textArea.value);
         mensaje.value = textoDesencriptado;
         textArea.value = ""; // Limpiar el área una vez se de el evento onclick
-        mensaje.style.backgroundImage = "none"; // Quita imagen
+        mensaje.style.backgroundImage = new URL("../img/monitofeliz.png")
+        alerta.style.display = "none"; // Ocultar alerta
+        instrucciones.style.display = "none"; // Ocultar instrucciones
     } else {
         Swal.fire("Debes ingresar un texto");
 }
@@ -66,8 +74,10 @@ function btnDesencriptar() {
 function copiarMensaje(){
     navigator.clipboard.writeText(mensaje.value);
     Swal.fire("Texto copiado");
-    textArea.value = "";    
+    textArea.value = "";
+    mensaje.value = ""; 
+  
 }
 // Easter Egg -Descubre en console un mensaje para descifrar
-let text= "Desencripta lo siguiente --> fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!";
+let text= "Desencripta lo siguiente <Easter Egg>--> fufatenter ufatn rentertober mufaty imesntenterrentersaintenter";
 console.log(text)
