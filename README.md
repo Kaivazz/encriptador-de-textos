@@ -3,7 +3,7 @@
 
 El presente proyecto está dirigido a poner en marcha un encriptador de textos que tengas las siguientes características:
   -Dos areas principales, una para ingreso de texto y otra para mostrar mensaje encriptado/desencriptado, dos botones para las funciones de encriptar y desencriptar a elección del usuario y el resultado debe mostrarte en pantalla.
-Tambien se pide el extra de un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+  -Tambien se pide el extra de un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
 
 ------------------------------------------------------------------------
 Lenguajes utilizados: 
@@ -15,21 +15,26 @@ HTML, CSS y JavaScript (Leer el easter egg al final del resumen de esta hoja).
 
 Este es un código HTML para una página web que parece ser una herramienta de encriptación y desencriptación de textos. A continuación, te presento un resumen de la estructura y contenido de la página:
 
-Sección de cabecera
+Sección de cabecera:
 
 La página comienza con una declaración de tipo de documento HTML5 y especifica el idioma como español (Chile).
 Se incluyen metadatos sobre la página, como el conjunto de caracteres, la compatibilidad con Internet Explorer y la configuración de la ventana de visualización.
 Se enlazan archivos de estilo y fuentes externas, como Google Fonts y Font Awesome.
 Se incluye un título para la página: "Encriptador de Textos".
 
-Sección de cuerpo
+Sección de cuerpo:
+La sección de cuerpo se divide en tres partes: header, main y footer.
 
-La sección de cuerpo se divide en tres partes: <header>, <main> y <footer>.
-<header>: contiene una imagen de logo de Alura.
-<main>: contiene dos secciones: <section class="ingresa"> y <section class="textoRevelado">.
-<section class="ingresa">: contiene un área de texto para ingresar el texto a encriptar o desencriptar, un párrafo con información sobre las reglas de encriptación y dos botones para encriptar y desencriptar.
-<section class="textoRevelado">: contiene un área de texto para mostrar el texto encriptado o desencriptado, un párrafo con un mensaje de alerta y un botón para copiar el texto.
-<footer>: contiene un título, dos enlaces a redes sociales (LinkedIn y GitHub) y un aviso de derechos de autor.
+header: contiene una imagen de logo de Alura.
+
+main: contiene dos secciones: section class="ingresa" y section class="textoRevelado".
+
+section class="ingresa": contiene un área de texto para ingresar el texto a encriptar o desencriptar, un párrafo con información sobre las reglas de encriptación y dos botones para encriptar y desencriptar.
+
+section class="textoRevelado": contiene un área de texto para mostrar el texto encriptado o desencriptado, un párrafo con un mensaje de alerta y un botón para copiar el texto.
+
+footer: contiene un título, dos enlaces a redes sociales (LinkedIn y GitHub) y un aviso de derechos de autor.
+
 
 En resumen, esta página web ofrece ser una herramienta básica para encriptar y desencriptar textos con una interfaz de usuario simple.
 
@@ -85,12 +90,14 @@ Se define una matriz matrizCodigo que contiene las "llaves" de encriptación.
 Funciones
 
 encriptar(stringEncriptada): función que encripta un texto utilizando la matriz matrizCodigo. Convierte el texto a minúsculas y reemplaza cada letra con su correspondiente código de encriptación.
-btnEncriptar(): función que se llama cuando se hace clic en el botón "Encriptar". Verifica si el área de texto no está vacía, encripta el texto y lo muestra en el área de mensaje.
-desencriptar(stringDesencriptada): función que desencripta un texto utilizando la matriz matrizCodigo. Convierte el texto a minúsculas y reemplaza cada código de encriptación con su correspondiente letra.
-btnDesencriptar(): función que se llama cuando se hace clic en el botón "Desencriptar". Verifica si el área de texto no está vacía, desencripta el texto y lo muestra en el área de mensaje.
-copiarMensaje(): función que se llama cuando se hace clic en el botón "Copiar". Copia el texto del área de mensaje al portapapeles.
-Easter Egg
 
+btnEncriptar(): función que se llama cuando se hace clic en el botón "Encriptar". Verifica si el área de texto no está vacía, encripta el texto y lo muestra en el área de mensaje.
+
+desencriptar(stringDesencriptada): función que desencripta un texto utilizando la matriz matrizCodigo. Convierte el texto a minúsculas y reemplaza cada código de encriptación con su correspondiente letra.
+
+btnDesencriptar(): función que se llama cuando se hace clic en el botón "Desencriptar". Verifica si el área de texto no está vacía, desencripta el texto y lo muestra en el área de mensaje.
+
+copiarMensaje(): función que se llama cuando se hace clic en el botón "Copiar". Copia el texto del área de mensaje al portapapeles.
 
 En resumen, el codigo define funciones para encriptar y desencriptar textos utilizando una matriz de "llaves" de encriptación, y también incluye una función para copiar el texto encriptado o desencriptado al portapapeles. 
 
