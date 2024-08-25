@@ -31,7 +31,7 @@ return stringEncriptada;
 
 //nos permite hacer función del evento sobre botón encriptar
 function btnEncriptar() {
-    if (textArea.value.trim() !== "") { // Verificar si la textarea no está vacía
+    if (textArea.value.trim() !== "") { // Verificar si la textarea no está vacía 
         const textoEncriptado = encriptar(textArea.value);
         mensaje.value = textoEncriptado;
         textArea.value = ""; // Limpiar el área una vez se de el evento onclick

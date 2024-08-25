@@ -283,32 +283,3 @@ h2 {
     }
   }
 }
-  /*Ajustes para pantallas grandes*/
-  /* @media (min-width: 769px) {
-   
-    body {
-    grid-template-columns: repeat(1, 1fr);
-    }
-    main {
-    flex-direction: row;
-    }
-    .ingresa {
-    max-width: 90%;
-    }
-    .ingresaTexto {
-    height: 60%;
-    }
-    .btn-encriptar, .btn-desencriptar {
-    width: 70%;
-    }
-    .textoRevelado {
-    width: 70%;
-    height: 98%;
-    margin-top: -10%;
-    }
-    .mensaje {
-    height: 100%;
-    border-radius: 10%;
-    font-size: 0.4 rem;
-    }
-  } */
