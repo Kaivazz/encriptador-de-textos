@@ -1,14 +1,18 @@
 #Encriptador de Textos - Challenge 1 - Alura. 
 ------------------------------------------------------------------------
+
 El presente proyecto está dirigido a poner en marcha un encriptador de textos que tengas las siguientes características:
--Dos areas principales, una para ingreso de texto y otra para mostrar mensaje encriptado/desencriptado, dos botones para las funciones de encriptar y desencriptar a elección del usuario y el resultado debe mostrarte en pantalla.
+  -Dos areas principales, una para ingreso de texto y otra para mostrar mensaje encriptado/desencriptado, dos botones para las funciones de encriptar y desencriptar a elección del usuario y el resultado debe mostrarte en pantalla.
 Tambien se pide el extra de un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+
 ------------------------------------------------------------------------
 Lenguajes utilizados: 
+
 HTML, CSS y JavaScript (Leer el easter egg al final del resumen de esta hoja). 
 
 -----------------------------------------------------------------------
 ##Resumen del HTML
+
 Este es un código HTML para una página web que parece ser una herramienta de encriptación y desencriptación de textos. A continuación, te presento un resumen de la estructura y contenido de la página:
 
 Sección de cabecera
@@ -28,6 +32,7 @@ La sección de cuerpo se divide en tres partes: <header>, <main> y <footer>.
 <footer>: contiene un título, dos enlaces a redes sociales (LinkedIn y GitHub) y un aviso de derechos de autor.
 
 En resumen, esta página web ofrece ser una herramienta básica para encriptar y desencriptar textos con una interfaz de usuario simple.
+
 -----------------------------------------------------------------------------------------
 ##Resumen de la hoja de estilos 
 
@@ -67,8 +72,10 @@ Para pantallas pequeñas (max-width: 480px).
 Para pantallas medianas (min-width: 481px y max-width: 768px).
 
 En resumen, este código CSS establece estilos generales para la página, y luego aplica estilos específicos para cada sección de la página, como header, main, secciones, inputs, botones, "textoRevelado", mensaje y footer. También se utilizan media queries para adaptar los estilos a diferentes tamaños de pantalla.
+
 -----------------------------------------
-##Resumen de la hoja de estilos 
+##Resumen de JavaScript
+
 La página de JavaScript, se encarga de la funcionalidad de encriptación, desencriptación y copiado de texto.
 Variables y selección de elementos
 
@@ -89,7 +96,9 @@ En resumen, el codigo define funciones para encriptar y desencriptar textos util
 
 ///Easter egg:
 Se define un texto oculto en la consola que contiene un mensaje para descifrar, está empleado para que se imprima en la consola, aunque muy bien podría leerse en este documento, pero, ¿Donde esta la diversion de esto? 
+
 -----------------------------------------------------
+
 Soy estudiante del Curso G7 de Alura Latam junto a Oracle One y con este proyecto, he puesto en práctica muchos de los conocimientos que logré ver en los distintos videos del curso en cuestión, así como otros videos y material entregado por los instructores, apoyo con los compañeros de Discord del curso, documentación y videos varios de la comunidad disponibles de manera libre en internet para algunas preguntas en programación. 
 
 
