@@ -106,7 +106,7 @@ Se define un texto oculto en la consola que contiene un mensaje para descifrar, 
 
 -----------------------------------------------------
 
-Soy estudiante del Curso G7 de Alura Latam junto a Oracle One y con este proyecto, he puesto en práctica muchos de los conocimientos que logré ver en los distintos videos del curso en cuestión, así como otros videos y material entregado por los instructores, apoyo con los compañeros de Discord del curso, documentación y videos varios de la comunidad disponibles de manera libre en internet para algunas preguntas en programación. 
+Soy estudiante del Curso G7 de Alura Latam junto a Oracle One y con este proyecto, he puesto en práctica muchos de los conocimientos que logré ver en los distintos videos del curso en cuestión, así como otros videos y material entregado por los instructores, recibí apoyo con los compañeros de Discord del curso, así como también en la documentación y videos varios de la comunidad, disponibles de manera libre en internet para algunas de las preguntas que me fueron surgiendo. 
 
 
 
