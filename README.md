@@ -43,7 +43,7 @@ En resumen, esta página web ofrece ser una herramienta básica para encriptar y
 
 Importación de fuente y variables:
 
-Se importa la fuente "Lexend Zetta" desde Google Fonts.
+Se importa la fuente "Lexend Zetta" desde Google Fonts. (Esta fuente se ocupa especialmente para personas que tengan ADHD (TDAH).
 Se definen variables para los colores utilizados en la página.
 
 Estilos generales:
